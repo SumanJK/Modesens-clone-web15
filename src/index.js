@@ -34,7 +34,7 @@ app.post("/register", register);
 app.post("/login",login);
 
  
-app.listen(process.env.PORT || 5004,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     connect()
     console.log("port listening 5000")
 })

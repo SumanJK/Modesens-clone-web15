@@ -42,4 +42,28 @@ router.delete("/:id",async(req,res)=>{
     return res.status(200).send(beuty)
 })
 
+router.get("/search/:key", async (req, res) => {
+
+    try {
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+          }
+        let result= capitalizeFirstLetter(req.params.key);
+        let resp= req.params.key
+        const searchedItem= await Beuty.find(
+            {
+                "$or": [
+                    {"title":{$regex: result}},
+                    {"title":{$regex: resp}}
+                ]
+            }
+        ).lean().exec();
+        return res.status(200).send(searchedItem);
+
+    }catch (err) {
+
+        return res.status(500).send(err.message);
+    }
+});
+
 module.exports=router;

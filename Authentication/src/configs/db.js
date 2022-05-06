@@ -4,6 +4,6 @@ require("dotenv").config();
 //!  connecting to dataBase
 
 module.exports = () =>{
-    mongoose.connect(process.env.DATABASE);
+    mongoose.connect("mongodb+srv://sumanJK:sumanJK@cluster0.m3pvf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
     
 };

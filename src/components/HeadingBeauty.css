@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+.heading{
+    display: flex;
+    
+
+}
+.left{
+    width: 300px;
+    
+}
+.right{
+    width: 100%;
+}
+.heading2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text{
+    margin-top: 20px;
+    font-size: 11.9px;
+}
+.btn{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+.btn>button:hover{
+    background-color: black;
+    color: white;
+    
+}
+.btn > button{
+border: 1px solid rgb(0, 0, 0);
+padding: 8px;
+background-color: white;
+}

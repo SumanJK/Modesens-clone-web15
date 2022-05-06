@@ -1,32 +1,49 @@
+const User = require("../models/user.model");
 
- const User= require("../models/user.model");
+const jwt = require("jsonwebtoken");
 
- const register= async (req, res) => {
 
-    try{
 
-         let user= await User.findOne({email: req.body.email})
-        //! checking if email exists
-         if(user){
-             return res.status(200).send({message: "Email already exists"})
-         }
-        //! if not exist then create one
-         user= await User.create(req.body);
 
-         return res.status(201).send(user)
+require("dotenv").config();
 
-    }catch(err){
-        res.status(500).send(err.message)
+const generateToken = (user) => {
+  return jwt.sign({ user }, process.env.KEY);
+};
+
+const register = async (req, res) => {
+  try {
+    let user = await User.findOne({ email: req.body.email });
+    if (user) {
+      return res.status(400).send({ message: "User already exists" });
+    }
+    user = await User.create(req.body);
+    const token = generateToken(user);
+    return res.status(200).send({ user, token });
+  } catch (e) {
+    return res.status(500).send({ message: e.message });
+  }
+};
+
+const login = async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) {
+      return res.status(400).send({ message: "Wrong Email or Password" });
     }
 
-}
+    const match = user.checkPassword(req.body.password);
 
-const login= async (req, res) => {
-    try{
-        return res.status(200).send("logged in")
-    }catch(err){
-        res.status(500).send(err.message)
+    if (!match) {
+      return res.status(400).send({ message: "Wrong Email or Password" });
     }
-}
 
-module.exports= {register,login}
+    const token = generateToken(user);
+
+    return res.status(200).send({ user, token });
+  } catch (e) {
+    return res.status(500).send({ message: e.message });
+  }
+};
+
+module.exports ={register,login}

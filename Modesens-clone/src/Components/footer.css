@@ -1,0 +1,72 @@
+
+.mainbox{
+    margin-left: 10px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+}
+
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+.lowerborder{
+    margin-top: 2%;
+    border: 1px solid;
+    background-color: black;
+    height: -5px;
+}
+.upperborder{
+    margin-top: 2%;
+    border: 1px solid;
+    background-color: black;
+    height:0px;
+}
+h3{
+    font-weight: 400;
+}
+.leftside{
+    width: 2.5%;
+    height: 2.5%;
+}
+.contacticons{
+    height: 2%;
+}
+.adjust{
+    margin-top: -3.5%;
+    margin-left: 3%;
+}
+.rightside{
+    margin-top: -3%;
+    margin-left: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instagram{
+    margin-top:-2%;
+}
+.instagram>a>img{
+    height: 45px;
+}
+.facebook{
+    margin-top:-2%;
+
+}
+.facebook>a>img{
+    height: 45px;
+}
+
+.wb{
+    margin-top: -2% ;
+}
+.wb>a>img{
+   height: 45px;
+}
+.chat{
+    margin-top: -2%;
+}
+.chat>a>img{
+   height: 45px;
+}

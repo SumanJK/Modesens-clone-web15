@@ -1,0 +1,124 @@
+.left{
+    margin-left: 20%;
+    margin-top:2%;
+    width: 35%;
+    height: 580px;
+}
+h3{
+    font-weight: 200;
+}
+.left>img{
+    height: 580px;
+    width: 100%;
+}
+.logo{
+    margin-top: -320px;
+    margin-left: 25%;
+    background-color: #29292a;
+    position: relative;
+}
+.modsence{
+    color: #29292a;
+    position:absolute;
+    background-color: #29292a;
+    opacity: 0.8;
+
+}
+.modsence>h1{
+    color: white;
+    font-weight: 400;
+}
+.modsence>p{
+    color: white;
+}
+.right{
+    margin-left: 50%;
+    margin-top: -580px;
+}
+.adjust{
+    margin-top: -12px;
+    text-align: center;
+    align-items: center;
+}
+input{
+    width: 45%;
+    margin-top: 10px;
+    height: 20px;
+    padding: 5px;
+
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+.offers{
+    padding-left: -10px;
+    width: 60%;
+    margin-left: 26%;
+}
+.offers>label{
+    margin-top: 1px;
+    margin-left: 10px;
+    font-size:x-small;
+}
+#Subscribe{
+    margin-left:-90px;
+}
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #333;
+    border: 3px solid white;
+    width: 5px;
+    height: 5px;
+  }
+  
+  input[type='radio']:checked {
+    background: #333;
+  }
+  
+button{
+    margin-top: 5%;
+    width: 48%;
+    background-color: black;
+    color: white;
+    font-size:large;
+    height: 35px;
+}
+.firsthr{
+    width: 20%;
+    margin-left: 26%;
+    padding-top: 5%;
+}
+.secondhr{
+    margin-left: 54%;
+    width: 20%;
+    margin-top: -3%;
+}
+.or{
+    margin-top: -3.5%;
+    font-weight: 200;
+}
+
+.logos{
+    width: 48%;
+    margin-left: 26%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    color: #9ea0b2;
+}
+.signinfooter{
+    margin-top: 50px;
+    width: 48%;
+    margin-left: 26%;
+    color: #9ea0b2;
+    font-weight: 400;
+}
+.forgetpass{
+    margin-top: 10px;
+    font-weight: 300;
+}

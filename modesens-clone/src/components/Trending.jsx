@@ -1,42 +1,14 @@
-import ReactCaroussel from "react-caroussel";
-import "react-caroussel/dist/index.css";
-import "../style/trending.css";
-import { branditem } from "../data/ima";
-const Card = ({ ele }) => (
-  <div className="card">
-    <img src={ele.src} alt="img" height="300px" width="100%" />
-    {/* <h1>{ele.heading}</h1>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-    <button>Read more</button> */}
-  </div>
-);
 
-export const Trending = ()=> {
-  return (
-    <div className="container">
-      <ReactCaroussel slidesToShow={4} slidesToScroll={1} infinite={true}>
-        {branditem
-          .map((ele, index) => (
-            <Card key={index} ele={ele} />
-          ))}
-      </ReactCaroussel>
+export const Trending = () => {
 
-      {/* <h3 className="mt-5">React Carousel one element</h3>
-      <ReactCaroussel
-        infinite={true}
-        autoplay={true}
-        speed={2} // 2s
-        display={{
-          dots: true,
-          arrows: false
-        }}
-      >
-        <Card />
-        <Card />
-        <Card />
-      </ReactCaroussel> */}
-    </div>
-  );
+    return (
+        <>
+            
+                <div style={{width:"400px",marginLeft:"15%",marginTop:"100px"}}><hr /></div>
+                <div style={{fontSize: "30px",fontWeight: "bold",marginTop:"-30px"}}>Trending Now</div>
+                <div style={{marginLeft:"59%",width:"400px",marginTop: "-23px"}}><hr /></div>
+                
+            
+        </>
+    )
 }

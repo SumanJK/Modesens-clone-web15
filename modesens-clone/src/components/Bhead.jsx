@@ -1,4 +1,4 @@
-import "../style/slider.css"
+import "../style/women/slider.css"
 export const Bhead = ()=>{
 
     return(

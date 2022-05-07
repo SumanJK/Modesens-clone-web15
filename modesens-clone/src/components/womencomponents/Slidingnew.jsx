@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../style/slidingnew.css";
+import "../../style/women/slidingnew.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
@@ -102,11 +102,11 @@ export const Slidingnew = ()=> {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-        <div style={{position: "relative", height: "100%",width: "70%",margin:"auto"}}>
+        <div style={{position: "relative", height: "100%",width: "100%"}}>
            <img style={{height: "100%", width: "100%",margin:"auto"}} src="https://modesens.com/banner/11754/getimg/?img=%2Fbanner%2F20220506-modesens-Harrods-1140x400-F.jpg" alt="" />
             </div>
 
-        <div style={{position: "absolute", zIndex:"2",bottom: "0",textAlign:"center"}}>
+        <div style={{position: "absolute", zIndex:"2",color:"white",textAlign:"center"}}>
         <h1>Let's Shop at Harrods this Weekend</h1>
             <b>Rewards members get a special 10% off</b>
             <br />

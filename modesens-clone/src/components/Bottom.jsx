@@ -1,4 +1,4 @@
-import "../style/bottom.css"
+import "../style/women/bottom.css"
 export const Bottom = ()=>{
 
     return(
@@ -7,7 +7,7 @@ export const Bottom = ()=>{
                 <div className="left">
                 <h1>Download the</h1>
                 <h1>ModeSens App</h1>
-                <p>A seamless experience that takes your style</p>
+                <p >A seamless experience that takes your style</p>
                 <p> to the next level</p>
                 <button className="btn">DOWNLOAD NOW</button>
                   <br />

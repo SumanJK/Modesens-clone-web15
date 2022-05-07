@@ -2,7 +2,7 @@ import React from "react";
 import range from "lodash/range";
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import {branditem} from "../data/ima.js"
+import {branditem} from "../../data/menima"
 const noOfItems = 12;
 const noOfCards = 3;
 const autoPlayDelay = 2000;

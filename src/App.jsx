@@ -4,6 +4,7 @@ import './App.css'
 import { HeadingBeauty } from './components/HeadingBeauty'
 import{Product} from "./components/Products"
 import {PaginationSize} from "./components/PaginationOn"
+import{FilterDiv} from "./components/FilterDiv"
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
        <HeadingBeauty/>
        <div className='main'>
-         <div className='fillter'></div>
+         <div className='fillter'><FilterDiv/></div>
          <div className='products'><Product/> </div>
        </div>
        

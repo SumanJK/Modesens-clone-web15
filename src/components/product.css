@@ -1,9 +1,15 @@
 .product-div{
     border: 0.5px solid rgba(150, 147, 147, 0.132);
 }
-.product-div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
+.product-div:hover .hover-btn {
+
+    visibility:visible;
+    
+ }
+
+
+
 .all-products{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -16,6 +22,11 @@
 .name{
     font-size: 14px;
     
+}
+.wish{
+    display: flex;
+    justify-content: end;
+    padding: 7px;
 }
 * {
     margin: 0;
@@ -38,8 +49,46 @@ font-weight: bold;
     font-weight: bold;
     margin: 7px;
 }
-
+.pag-div{
+    display: flex;
+}
 
 .pag{
-    margin: auto;
+    margin-left: 450px;
+}
+
+.div-main{
+    padding-top: 20px;
+    
+}
+
+.options{
+    width: 85px;
+    font-weight: bold;
+    font-size: 11px;
+    
+}
+
+.view-sort{
+    padding-right: 7px;
+}
+
+.sort-div
+{
+    margin-left: 250px;
+}
+
+.hover-btn{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.btn2{
+    background-color: rgba(195, 194, 194, 0.116);
+    border: 1px solid black;
+    width: 80%;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
 }

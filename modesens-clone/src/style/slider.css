@@ -116,7 +116,7 @@ a{
 .bp{
   font-size:20px;
   margin-bottom: 0px;
- 
+  text-align: center;
 }
 .bptext > h1{
   color: black;

@@ -1,0 +1,134 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* my css */
+.container {
+  height: 450px;
+  width:70%;
+  margin:  auto;
+}
+.col{
+  height: 100%;
+  width: 90%;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+/* .col-1 {
+  background-image: url("https://modesens.com/banner/11724/getimg/?img=%2Fbanner%2F20220504-modesens-Oluxury-1140x400.jpg");
+  color: white;
+} */
+a{
+ 
+ color: white;
+}
+.text{
+  float: left;
+  margin-left: 70px;
+  margin-top:250px;
+}
+
+.col-2{
+  background-image: url("https://modesens.com/banner/11682/getimg/?img=%2Fbanner%2F20220427LengJing-modesens1140x400.jpg")
+}
+.text-1{
+  margin-top: 200px;
+  color: white;
+}
+.col-3{
+  background-image: url("https://modesens.com/banner/11726/getimg/?img=%2Fbanner%2F20220502-modesens-Mothersday-1140x400.jpg")
+}
+.text-2{
+  float: left;
+  margin-left: 70px;
+  color: white;
+  margin-top: 180px;
+  
+}
+.text-2 > h1{
+  font-size: 45px;
+}
+.col-4{
+  background-image:url("https://modesens.com/banner/11648/getimg/?img=%2Fbanner%2F20220426-modesens-StatementSandal-1140x400-F.jpg")
+}
+.col-5{
+  background-image:url("https://modesens.com/banner/11585/getimg/?img=%2Fbanner%2F20220419-modesens-cutout-1140x400-F.jpg")
+}
+.col-6{
+  background-image:url("https://modesens.com/banner/11754/getimg/?img=%2Fbanner%2F20220506-modesens-Harrods-1140x400-F.jpg")
+}
+
+/*brand*/
+.bptext{
+  
+  background-color: white;
+
+}
+.bp{
+  font-size:20px;
+  margin-bottom: 0px;
+ 
+}
+.bptext > h1{
+  color: black;
+  
+}
+.bptext > p{
+  color: #6C757D;
+}
+.brand-col{
+  width: 97%;
+}
+.brand-col > img{
+  width: 100%;
+}
+

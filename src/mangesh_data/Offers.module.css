@@ -1,0 +1,147 @@
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -70px;
+  margin-top: 100px;
+}
+.search {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+}
+
+.search div {
+  height: 36px;
+  width: 65%;
+  border-bottom: 1px solid rgb(160, 156, 156);
+  margin-right: 20px;
+}
+.search input {
+  height: 80%;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search div > img {
+  height: 15px;
+  width: 15px;
+}
+
+.search button {
+  width: 22%;
+  background-color: white;
+  border: 1px solid rgb(86, 83, 83);
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 13px;
+}
+.search button > img {
+  padding-left: 80px;
+}
+.container {
+  margin: auto;
+  width: 73%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 25px;
+  padding-top: 50px;
+}
+
+.itemdiv {
+  width: 248px;
+  height: 457px;
+  border: 1px solid rgb(199, 196, 196);
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.itemdiv > img {
+  height: 60px;
+  object-fit: contain;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.itemdiv button {
+  margin: auto;
+  height: 40px;
+  width: 80%;
+  border: 1px solid gray;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.itemdiv button:hover {
+  transition: 100ms;
+  color: white;
+  background-color: rgb(23, 23, 23);
+}
+
+.itemdiv > p {
+  text-align: center;
+  font-size: 15px;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.nocode {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 15px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(227, 224, 224);
+}
+.nocode p {
+  text-align: left;
+}
+
+.nocode div:last-child {
+  border: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.nocode img {
+  height: 15px;
+  width: 15px;
+  margin: 12px auto;
+}
+
+.top {
+  width: 30px;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 97%;
+  top: 50%;
+}
+
+.top img {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+}
+
+.top p {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.top:hover {
+  background-color: rgb(216, 211, 211);
+}

@@ -1,0 +1,95 @@
+
+
+.title1{
+    margin-top: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.filterdiv {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  /* height: 800px; */
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchdiv {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchdiv p {
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(52, 49, 49);
+}
+
+.searchdiv img {
+  margin-right: 22px;
+}
+
+.searchdiv:last-child p:last-child {
+  margin-right: 20px;
+}
+
+.selectdiv {
+  width: 100%;
+}
+select {
+  height: 32px;
+  width: 90%;
+  /* border: 1px solid red; */
+  color: rgb(45, 43, 43);
+  border: 1px solid gray;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.but  {
+    margin-top: 10px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid gray;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  .but:hover {
+    transition: 100ms;
+    color: white;
+    background-color: rgb(23, 23, 23);
+  }
+.lists {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 25px;
+}
+.lists > ul {
+    text-align: left;
+    
+} 
+.lists > ui {
+    text-align: left;
+}
+.high{
+    color: black;
+    font-weight: 400;
+}

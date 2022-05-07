@@ -23,13 +23,13 @@ export const Product=()=>{
 
     },[page])
     async function getData(){
-        const data2=await fetch(`http://localhost:3004/products`).then((d)=>d.json())
-        const data=await fetch(`http://localhost:3004/products?_page=${page}&_limit=16`).then((d)=>d.json())
+        // const data2=await fetch(`https://modesense-masai.herokuapp.com/beuties`).then((d)=>d.json())
+        const data=await fetch(`https://modesense-masai.herokuapp.com/beuties`).then((d)=>d.json())
         
-        setCount(Math.floor(data2.length/16))
+        // setCount(Math.floor(data2.length/16))
         
-        console.log(data)
-        setdata(data)
+        console.log("data:",data)
+        setdata(data.data)
         
       }
       console.log(page)
@@ -65,16 +65,16 @@ export const Product=()=>{
                          <div className="wish"><img src="https://cdn.modesens.com/static/img/20210601heart.svg" alt="" /></div>
                          <div className="img-div">
                              
-                             <img src={e.image} alt="" />
+                             <img src={e.image_url} alt="" />
                          </div>
                          <div className="hover-btn">
                              <button className="btn2">Quick View</button>
                          </div>
                      </div>
                      <div>
-                     <h3 className="name">{e.name}</h3>
-                     <p className="tag">{e.tag}</p>
-                     <p className="price">{e.price}</p>
+                     <h3 className="name">{e.brand}</h3>
+                     <p className="tag">{e.title}</p>
+                     <p className="price">${e.price} - ${e.offprice}</p>
                      <p className="store">{e.store}</p>
                      </div>
 

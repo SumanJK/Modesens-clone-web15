@@ -19,6 +19,9 @@
     margin: auto;
     height: 223px;
 }
+.img-div>img{
+    height: 100%;
+}
 .name{
     font-size: 14px;
     
@@ -54,7 +57,7 @@ font-weight: bold;
 }
 
 .pag{
-    margin-left: 450px;
+    margin-left: 500px;
 }
 
 .div-main{
@@ -75,7 +78,7 @@ font-weight: bold;
 
 .sort-div
 {
-    margin-left: 250px;
+    margin-left: 30%;
 }
 
 .hover-btn{

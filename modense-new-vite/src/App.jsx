@@ -21,8 +21,8 @@ import {Mens} from "./pages/Mens"
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Home />
-      {/* <WomenPageBrand/> */}
+      {/* <Home /> */}
+      <WomenPageBrand/>
       {/* <Mens/> */}
     </ChakraProvider>
   );

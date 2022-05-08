@@ -6,14 +6,14 @@ import { useEffect, useState } from "react"
 // import "Products.css"
 import "./product.css"
 
-import { PaginationSize } from "./PaginationOn"
+// import { PaginationSize } from "./PaginationOn"
 
 
 export const Product=()=>{
 
     const [mydata,setdata]= useState([])
-    const [page,setPage1]=useState(1)
-    const [count,setCount]=useState(1)
+    // const [page,setPage1]=useState(1)
+    // const [count,setCount]=useState(1)
 
 
     
@@ -21,25 +21,25 @@ export const Product=()=>{
     useEffect(()=>{
         getData()
 
-    },[page])
+    },[])
     async function getData(){
-        // const data2=await fetch(`https://modesense-masai.herokuapp.com/beuties`).then((d)=>d.json())
+        // const data2=await fetch(`http://localhost:3004/products`).then((d)=>d.json())
         const data=await fetch(`https://modesense-masai.herokuapp.com/beuties`).then((d)=>d.json())
         
         // setCount(Math.floor(data2.length/16))
         
-        console.log("data:",data)
+        console.log(data)
         setdata(data.data)
         
       }
-      console.log(page)
+    //   console.log(page)
       
   console.log("mydata",mydata)
   return(
        
       <div className="div-main"> 
       <div className="pag-div">
-      <PaginationSize count1={count} page1={page} setPage1={setPage1} />
+      {/* <PaginationSize count1={count} page1={page} setPage1={setPage1} /> */}
       <div className="sort-div">
           <img className="view-sort"  src="https://cdn.modesens.com/static/img/20210908column2.svg" alt="" />
           <img  className="view-sort" src="https://cdn.modesens.com/static/img/20210908column3.svg" alt="" />

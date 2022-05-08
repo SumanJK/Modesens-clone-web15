@@ -57,7 +57,7 @@ font-weight: bold;
 }
 
 .pag{
-    margin-left: 500px;
+    margin-left: 450px;
 }
 
 .div-main{
@@ -69,6 +69,7 @@ font-weight: bold;
     width: 85px;
     font-weight: bold;
     font-size: 11px;
+    border: 0px;
     
 }
 
@@ -78,7 +79,7 @@ font-weight: bold;
 
 .sort-div
 {
-    margin-left: 30%;
+    margin-left: 80%;
 }
 
 .hover-btn{

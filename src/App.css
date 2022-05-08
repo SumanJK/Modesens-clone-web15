@@ -1,24 +1,4 @@
-.App {
+.App{
+  margin:auto;
   text-align: center;
 }
-
-* {
-  margin: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.heading{
-  text-align: left;
-}
-
-.fillter{
-  width: 300px;
-}
-.main{
-  display: flex;
-}
-.products{
-  width: 100%;
-  
-}
-

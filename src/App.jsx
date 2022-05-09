@@ -38,7 +38,7 @@ function App() {
   };
   const { isAuth } = useContext(AuthContext);
 
-  window.(handleLoginClick);
+
 
   return (
     <ChakraProvider theme={theme}>

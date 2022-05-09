@@ -38,6 +38,8 @@ function App() {
   };
   const { isAuth } = useContext(AuthContext);
 
+  window.(handleLoginClick);
+
   return (
     <ChakraProvider theme={theme}>
       {show ? <NavbarCouponSlider /> : null}
@@ -59,7 +61,7 @@ function App() {
       {/* <SignUp isShowLogin={isShowLogin}/>  */}
       {/* <Login  isShowLogin={isShowLogin}/> */}
       {/*  */}
-      <Routes>
+      <Routes onClick={()=>{handleLoginClick()}}>
         <Route path="/" element={<Home />}></Route>
         <Route path="/men" element={<Mens />}></Route>
         <Route path="/women" element={<Women />}></Route>

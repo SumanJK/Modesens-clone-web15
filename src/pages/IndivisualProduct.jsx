@@ -322,7 +322,7 @@ console.log(user,"fjf")
                   <PriceAlert onClick={()=>{alert("Your Alert has been set")}}>Set Alert</PriceAlert>
                 </PriceDiv>
                 <AdditionalDesc>Shop From 8 Stores</AdditionalDesc>
-                <a href={user.href}><BuyButton>SELECT STORE TO BUY</BuyButton></a>
+                <a href={user.href} target="_blank"><BuyButton>SELECT STORE TO BUY</BuyButton></a>
                 <PointsDiv>
                   <Points>{user.offer} </Points> &nbsp; &nbsp; 
                   <LearnMore> Learn more</LearnMore>

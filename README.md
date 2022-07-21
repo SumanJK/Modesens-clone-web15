@@ -37,7 +37,7 @@ live link
 
 **Client:** React, HTML, CSS, ChakraUI
 
-**Server:** NodeJS, ExpressJS, MongoDB
+**Server:** NodeJS, ExpressJS, MongoDB, Heroku
 
 
 ## Screenshots

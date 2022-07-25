@@ -13,7 +13,7 @@ https://modesens-web15.vercel.app/
 
 ## Feedback
 
-If you have any feedback, please reach out to us at riyazahmad.online@gmail.com
+If you have any feedback, please reach out to us at girisuman289@gmail.com
 
 
 ## Author

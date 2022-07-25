@@ -1,5 +1,7 @@
 
-# Modesens-clone-web15-2022
+# Modesens-clone
+
+![logo](https://logovectordl.com/wp-content/uploads/2021/10/modesens-inc-logo-vector.png)
 
  ModeSens is an American retail technology company providing men's, women's and children's apparel and accessories. The Dallas, Texas-based company offers a platform for users to shop through global retail stores using its digital shopping assistance technologies and services.
 

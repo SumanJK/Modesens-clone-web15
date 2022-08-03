@@ -60,7 +60,7 @@ export const SignUp = ({ isShowLogin }) => {
       }
     } else {
       toast({
-        title: "Fill all the fiedls",
+        title: "Fill all the fields",
         status: "info",
         duration: 3000,
         isClosable: true,

@@ -7,10 +7,12 @@ import "./Login.css";
 import loginPic from "../images/login.png";
 import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
+import {useToast} from "@chakra-ui/react";
 
 export const SignUp = ({ isShowLogin }) => {
   const { handleAuth } = useContext(AuthContext);
   const [formData, setFormData] = useState({});
+  const toast = useToast()
 
   const handleChange = (e) => {
     const { className, value } = e.target;
@@ -30,18 +32,39 @@ export const SignUp = ({ isShowLogin }) => {
     if (formData.email !== undefined && formData.password !== undefined) {
       if (formData.email.includes("@")) {
         if (formData.password.length < 8) {
-          alert("password must be of 8 digits");
+          toast({
+            title: "password must be of 8 digits",
+            status: "info",
+            duration: 3000,
+            isClosable: true,
+          });
         } else {
           userArr.push(formData);
           console.log(userArr, "arrr");
           localStorage.setItem("userDatas", JSON.stringify(userArr));
           handleAuth();
+          toast({
+            title: "Registration successful",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
         }
       } else {
-        alert("enter a valid email");
+        toast({
+          title: "enter a valid email",
+          status: "info",
+          duration: 3000,
+          isClosable: true,
+        });
       }
     } else {
-      alert("Please fill all the fields");
+      toast({
+        title: "Fill all the fiedls",
+        status: "info",
+        duration: 3000,
+        isClosable: true,
+      });
     }
   };
 

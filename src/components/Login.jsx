@@ -8,10 +8,13 @@ import "./Login.css";
 import loginPic from "../images/login.png";
 import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
+import {useToast} from "@chakra-ui/react";
 
 export const Login = ({ isShowLogin }) => {
   const { handleAuth } = useContext(AuthContext);
   const [loginData, setLoginData] = useState({});
+
+  const toast = useToast();
 
   const handleChange = (e) => {
     const { className, value } = e.target;
@@ -34,11 +37,22 @@ export const Login = ({ isShowLogin }) => {
           users.password === loginData.password
       )
     ) {
-      alert("Logged in successfully");
+      toast({
+        title: "Logged in successfully",
+        status: "error",
+        duration: 4000,
+        isClosable: true,
+      });
       <Navigate to="/" replace={false} />;
+      
       window.location.href="/";
     } else{
-      alert("Validation failed");
+      toast({
+        title: "Validation failed please try again!",
+        status: "error",
+        duration: 4000,
+        isClosable: true,
+      });
     }
    
       
